@@ -1,16 +1,23 @@
     
     .filter {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        
     }
 
     .filter-block {
         margin-bottom: 34px;
     }
-
-    .filter__item:not(:last-child) {
-        margin-right: 8px;
+    .filter__item{
+        margin-bottom: 15px;
+        &:not(:last-child) {
+            margin-right: 8px;
+            
+        }
     }
+
+
+    
   
     .btn__filter {
     padding: 6px 22px;

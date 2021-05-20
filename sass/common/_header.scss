@@ -2,7 +2,7 @@
 
 .header {
     border-bottom: 1px solid $header-border-color;
-
+    position: relative;
 
   }
 
@@ -26,13 +26,53 @@
   .logo__part {
     color: $accent-text-color;
   }
+
+  .site-nav__mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-nav__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  .site-nav__icon--close {
+    display: none;
+  }
+
+  .site-nav__button.is-open .site-nav__icon--close{
+    display: block;
+  }
+
+  .site-nav__button.is-open .site-nav__icon--menu{
+    display: none;
+  }
+
+
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    background-color: beige;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    &.is-open {
+      display: block;
+    }
+  }
   
   /* site-nav */
   
 
-  
-
-  
+   
   .nav-list__link {
     display: block;
     position: relative;
@@ -61,10 +101,7 @@
   }
    
 
-  
-
-  
-  
+    
   /* contacts-nav */
   
   .contacts-nav__link {
