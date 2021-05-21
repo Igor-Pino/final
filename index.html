@@ -23,8 +23,7 @@
 <body>
     <header class="header">
     <div class="container header__nav">
-        
-            <div class="site-nav__mobile">
+                    
                 <a href="" class="link logo logo--header"><span class="logo__part">Web</span>Studio</a>
 
                 <button type="button" class="site-nav__button" 
@@ -36,10 +35,10 @@
                         <use class="site-nav__icon--close" href="./images/symbol-defs.svg#icon_close"></use> 
                     </svg>  
                 </button>
-            </div>
+            
 
         <div class="mobile-menu" id="mobile-menu" data-menu>
-            <nav class="site-nav">
+                <nav class="site-nav">
                 
                 <ul class="list nav-list">
                     <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--current">Студия</a></li>
@@ -47,14 +46,14 @@
                     <li class="nav-list__item"><a href="" class="nav-list__link">Контакты</a></li>
                 </ul>
                 
-            </nav>
+                </nav>
 
        
                              
             <ul class="list contacts-nav">
 
                 <li class="contacts-nav__item">
-                    <a href="mailto:info@devstudio.com" class="link contacts-nav__link">
+                    <a href="mailto:info@devstudio.com" class="link contacts-nav__link contacts-nav__link--mail">
                     <svg class="contacts-nav__icon" width="16" height="12">
                         <use href="./images/symbol-defs.svg#icon-envelope"></use> 
                     </svg>                                  
@@ -62,8 +61,8 @@
                 </li>
 
 
-                <li class="contacts-nav__item">
-                    <a href="tel:+380961111111" class="link contacts-nav__link">
+                <li class="contacts-nav__item contacts-nav__item--phone">
+                    <a href="tel:+380961111111" class="link contacts-nav__link contacts-nav__link--phone">
                     <svg class="contacts-nav__icon" width="10" height="16">
                         <use href="./images/symbol-defs.svg#icon-smartphone"></use> 
                     </svg>               
@@ -72,10 +71,10 @@
             </ul>
 
             <ul class="list mobile-menu__link-list">
-                <li class="link">facebook</li>
-                <li class="link">instagram</li>
-                <li class="link">twitter</li>
-                <li class="link">linedin</li>
+                <li class="link mobile-menu__link">Instagram</li>
+                <li class="link mobile-menu__link">Twitter</li>
+                <li class="link mobile-menu__link">Facebook</li>
+                <li class="link mobile-menu__link">LinkedIn</li>
             </ul>
         </div>
     </div>
@@ -415,6 +414,8 @@
         </section>  
         <!-- модальное окно -->
         <div class="backdrop is-hidden" data-modal>
+           
+           
             <div class="modal">
                 
                 <button class="modal__close-btn" data-modal-close>
@@ -458,7 +459,7 @@
 
                     <div class="form__licence">
                     <input class="form__checkbox visually-hidden" type="checkbox" name="agreement" id="comfirm"/>
-                    <label class="form__licence-label" for="comfirm">Соглашаюсь с рассылкой и принимаю 
+                    <label class="form__licence-label" for="comfirm">Соглашаюсь с рассылкой и принимаю
                         <a href="" class="form__link">Условия договора</a></label>
                     </div>
 
