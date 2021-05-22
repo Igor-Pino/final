@@ -5,32 +5,65 @@
   }
   
   .footer-container {
-    display: block;
-    text-align: center;
- 
-    padding-top: 60px;
-    padding-bottom: 60px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+    @media screen and (max-width: 1199px) {
+      display: block;
+      text-align: center;
+
+   }
+
+    @media screen and (min-width: 1200px) {
+      display: flex; 
+      align-items: baseline; 
+
+    }
   }
 
-  .footer-contacts {
+
+.footer-contacts {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  
-  .footer-contacts__address {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    color: $second-text-accent-color;
+    
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: inline-flex;
+      flex-direction: column;
+      margin-right: 165px;
   }
-  
-  .footer-contacts__link {
-    color: $footer-contacts-color;
+
+  @media screen and (min-width: 1200px) {
+    display: block;    
   }
+}
+  
+
+.footer-contacts__address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $second-text-accent-color;
+}
+  
+.footer-contacts__link {
+  color: $footer-contacts-color;
+}
   
 
 .footer-socials-block {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+   margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    flex-direction: column;    
+    
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 69px;
+  }
 }
 
   
@@ -55,7 +88,15 @@
 /* footer subscribe-form */
 
 
-
+ .sign {
+   @media screen and (min-width: 768px) 
+   and (max-width: 1199px) {
+     margin-top: 60px;
+   }
+   @media screen and (min-width: 1200px) {
+     margin-left: 93px;
+   }
+ }
   
   .sign__label {
     display: inline-flex;
@@ -88,6 +129,13 @@
     border-radius: 4px;
     
     outline: none;
+
+    @media screen and (min-width: 1200px) {
+      display: inline-block;
+      margin-right: 8px;
+      width: 358px; 
+  
+    }
   }
   
   .sign-btn__icon {
