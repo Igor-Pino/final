@@ -30,7 +30,7 @@
                 aria-expanded="false" 
                 aria-controls="mobile-menu" 
                 data-menu-button>
-                    <svg class="" width="40px" height="40px" aria-label="переключатель мобильного меню class="icon">
+                    <svg class="icon" width="40px" height="40px" aria-label="переключатель мобильного меню">
                         <use class="site-nav__icon--menu" href="./images/symbol-defs.svg#icon_menu"></use> 
                         <use class="site-nav__icon--close" href="./images/symbol-defs.svg#icon_close"></use> 
                     </svg>  
@@ -71,10 +71,11 @@
             </ul>
 
             <ul class="list mobile-menu__link-list">
-                <li class="link mobile-menu__link">Instagram</li>
-                <li class="link mobile-menu__link">Twitter</li>
-                <li class="link mobile-menu__link">Facebook</li>
-                <li class="link mobile-menu__link">LinkedIn</li>
+                <li class="mobile-menu__item"><a class="link mobile-menu__link" href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li class="mobile-menu__item"><a class="link mobile-menu__link" href="" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li class="mobile-menu__item"><a class="link mobile-menu__link" href="" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li class="mobile-menu__item"><a class="link mobile-menu__link" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+ 
             </ul>
         </div>
     </div>
@@ -165,7 +166,12 @@
                 <ul class="list services__list">
                     <li class="services__item">
                     <div class="services__thumb">
-                        <img src="./images/Examples/keyboard.jpg" alt="клавіатура" width="370">
+                        <picture>
+                            <source srcset="./images/Examples/services1_desktop@1x.jpg 1x, ./images/Examples/services1_desktop@2x.jpg 2x">
+
+                            <img src="./images/Examples/services1.jpg" alt="клавіатура" width="370">
+                        </picture>
+
                         <div class="services__content">
                         <p class="services__name">Десктопные приложения</p>
                         </div>
@@ -173,7 +179,12 @@
                     </li>
                     <li class="services__item">
                     <div class="services__thumb">
-                        <img src="./images/Examples/notebook.jpg" alt="ноутбук" width="370">
+                        <picture>
+                            <source srcset="./images/Examples/services2_desktop@1x.jpg 1x, ./images/Examples/services2_desktop@2x.jpg 2x">
+
+                            <img src="./images/Examples/services2.jpg" alt="монитор" width="370">
+                        </picture>
+                        
                         <div class="services__content">
                         <p class="services__name">Мобильные приложения</p>
                         </div>
@@ -181,7 +192,12 @@
                     </li>                    
                     <li class="services__item">
                     <div class="services__thumb">
-                        <img src="./images/Examples/tablet.jpg" alt="планшет" width="370">
+                        <picture>
+                            <source srcset="./images/Examples/services3_desktop@1x.jpg 1x, ./images/Examples/services3_desktop@2x.jpg 2x">
+
+                            <img src="./images/Examples/services3.jpg" alt="планшет" width="370">
+                        </picture>
+                        
                         <div class="services__content">
                         <p class="services__name">Дизайнерские приложения</p>
                         </div>
@@ -197,7 +213,16 @@
                 <ul class="list team__list">
                                       
                     <li class="team__item">
-                        <img src="./images/our_team/IgorD.jpg" alt="Игорь Демьяненко" width="270">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/our_team/desktop/team1_desktop@1x.jpg 1x, ./images/our_team/desktop/team1_desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/our_team/tablet/team1_tablet@1x.jpg 1x, ./images/our_team/tablet/team1_tablet@2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/our_team/mobile/team1_mobile@1x.jpg 1x, ./images/our_team/mobile/team1_mobile@2x.jpg 2x">
+                                                                      
+                                                    
+                            <img src="./images/our_team/IgorD.jpg" alt="Игорь Демьяненко" width="450">
+
+                        </picture>
+                       
                         <div class="team__content">
                             <h3 class="team__mamber">Игорь Демьяненко</h3>
                             <p class="team__position">Product Designer</p>
@@ -237,7 +262,16 @@
                     </li>                  
                   
                     <li class="team__item">
-                        <img src="./images/our_team/OlgaR.jpg" alt="Ольга Репина" width="270">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/our_team/desktop/team2_desktop@1x.jpg 1x, ./images/our_team/desktop/team2_desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/our_team/tablet/team2_tablet@1x.jpg 1x, ./images/our_team/tablet/team2_tablet@2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/our_team/mobile/team2_mobile@1x.jpg 1x, ./images/our_team/mobile/team2_mobile@2x.jpg 2x">
+                                                                 
+                                                    
+                            <img src="./images/our_team/OlgaR.jpg" alt="Ольга Репина" width="450">
+
+                        </picture>
+                        
                         <div class="team__content">
                             <h3 class="team__mamber">Ольга Репина</h3>
                             <p class="team__position">Frontend Developer</p>
@@ -276,7 +310,16 @@
                     </li>
 
                     <li class="team__item">
-                        <img src="./images/our_team/NikolayT.jpg" alt="Николай Тарасов" width="270">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/our_team/desktop/team3_desktop@1x.jpg 1x, ./images/our_team/desktop/team3_desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/our_team/tablet/team3_tablet@1x.jpg 1x, ./images/our_team/tablet/team3_tablet@2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/our_team/mobile/team3_mobile@1x.jpg 1x, ./images/our_team/mobile/team3_mobile@2x.jpg 2x">
+                                                                      
+                            <img src="./images/our_team/NikolayT.jpg" alt="Николай Тарасов" width="450">                  
+                            
+
+                        </picture>
+                        
                         <div class="team__content">
                             <h3 class="team__mamber">Николай Тарасов</h3>
                             <p class="team__position">Marketing</p>
@@ -315,7 +358,16 @@
                     </li>
 
                     <li class="team__item">
-                        <img src="./images/our_team/MikeE.jpg" alt="Михаил Ермаков" width="270">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/our_team/desktop/team4_desktop@1x.jpg 1x, ./images/our_team/desktop/team4_desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./images/our_team/tablet/team4_tablet@1x.jpg 1x, ./images/our_team/tablet/team4_tablet@2x.jpg 2x">
+                            <source media="(max-width: 767px)" srcset="./images/our_team/mobile/team4_mobile@1x.jpg 1x, ./images/our_team/mobile/team4_mobile@2x.jpg 2x">
+                                                                      
+                            <img src="./images/our_team/MikeE.jpg" alt="Михаил Ермаков" width="450">                        
+                            
+
+                        </picture>
+                        
                         <div class="team__content">
                             <h3 class="team__mamber">Михаил Ермаков</h3>
                             <p class="team__position">UI Designer</p>
