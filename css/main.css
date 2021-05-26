@@ -135,8 +135,9 @@ h3 {
 
 @media screen and (max-width: 767px) {
   .header__nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 }
@@ -177,6 +178,7 @@ h3 {
 
 .mobile-menu {
   background-color: #ffffff;
+  padding-top: 40px;
   padding-left: 40px;
   padding-bottom: 48px;
 }
@@ -207,10 +209,10 @@ h3 {
 }
 
 /* site-nav */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .site-nav {
     display: block;
-    margin-bottom: 180px;
+    margin-bottom: 130px;
   }
 }
 
@@ -268,6 +270,12 @@ h3 {
   line-height: 1.172;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 479px) {
+  .nav-list__link {
+    font-size: 28px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -368,7 +376,15 @@ h3 {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .contacts-nav__link--mail {
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .contacts-nav__link--mail {
     font-size: 24px;
     line-height: 1.16;
@@ -376,7 +392,16 @@ h3 {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .contacts-nav__link--phone {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .contacts-nav__link--phone {
     font-size: 30px;
     line-height: 1.17;
@@ -407,16 +432,33 @@ h3 {
   color: #2196f3;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-menu__link {
+    font-size: 13px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
+
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   height: 600px;
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .overlay {
   max-width: 1600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -424,6 +466,12 @@ h3 {
   background-size: cover;
   background-origin: border-box;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/backgrounds/mobile/Header_mobile@1x.jpg);
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    height: 600px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -458,7 +506,10 @@ h3 {
 
 .hero__title {
   display: block;
+  max-width: 360px;
   margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: 900;
@@ -467,6 +518,13 @@ h3 {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    max-width: 696px;
+  }
 }
 
 .hero__btn {
@@ -1302,10 +1360,22 @@ h3 {
   transform: translatey(0);
 }
 
+@media screen and (max-width: 479px) {
+  .card__overlay {
+    padding-top: 15px;
+  }
+}
+
 .card__text {
   margin: 0;
   font-size: 18px;
   line-height: 1.55;
   color: #ffffff;
+}
+
+@media screen and (max-width: 479px) {
+  .card__text {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

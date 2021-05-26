@@ -3,6 +3,7 @@
   .header {
     border-bottom: 1px solid $header-border-color;
     position: relative;
+    
 
   }
 
@@ -32,9 +33,12 @@
 
   .header__nav {
    @media screen and (max-width: 767px) {
+     padding-top: 10px;
+     padding-bottom: 10px;
      display: flex;
-     justify-content: space-between;
+     
      align-items: center;
+
     }
     @media screen and (min-width: 768px) {
       display: flex;
@@ -78,6 +82,7 @@
   .mobile-menu {
    
     background-color: $body-background-color;
+    padding-top: 40px;
     padding-left: 40px;
     padding-bottom: 48px;
             
@@ -91,6 +96,7 @@
       left: 0%;
       top: 0%;
       width: 100%;
+      
       z-index: 99;
     }
 
@@ -109,9 +115,9 @@
 
 
   .site-nav {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 479px) {
       display: block;
-      margin-bottom: 180px;
+      margin-bottom: 130px;
     }
     @media screen and (min-width: 480px) and (max-width: 767px) {
       display: block;
@@ -179,6 +185,9 @@
     letter-spacing: 0.02em;
   
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width:479px) {
+      font-size: 28px;
+    }
 
     @media screen and (min-width:768px) {
       font-size: 14px;
@@ -297,7 +306,14 @@
 
   }
   .contacts-nav__link--mail{
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 479px) {
+      font-size: 18px;
+      line-height: 1.16;
+      letter-spacing: 0.02em;
+    }
+
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
       font-size: 24px;
       line-height: 1.16;
       letter-spacing: 0.02em;
@@ -306,11 +322,18 @@
   }
 
   .contacts-nav__link--phone {
-    @media screen and (max-width: 767px) {
-     font-size: 30px;
-     line-height: 1.17;
-     letter-spacing: 0.02em;
-     color: $accent-text-color;
+    @media screen and (max-width: 479px) {
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: $accent-text-color;
+    }
+      
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      font-size: 30px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: $accent-text-color;
     }
   }
 
@@ -336,6 +359,13 @@
 
 
   .mobile-menu__link {
+    @media screen and (max-width: 479px) {
+      font-size: 13px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
+      color: $accent-text-color;  
+    }
+
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
